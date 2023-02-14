@@ -1,0 +1,8 @@
+core:
+- lib/src/core/**/*.dart
+
+service/APOD:
+- lib/src/service/apod/*.dart
+
+test:
+- test/**/*.dart
