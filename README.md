@@ -295,7 +295,7 @@ The [RetryEvent](https://pub.dev/documentation/nasa_api/latest/nasa_api/RetryEve
 
 ### 1.4.6. Thrown Exceptions
 
-**nasa_api** provides a convenient exception object for easy handling of exceptional responses and errors returned from [NASA API 0](https://developer.NASA.com/en/docs/NASA-api/data-dictionary/introduction).
+**nasa_api** provides a convenient exception object for easy handling of exceptional responses and errors returned from [NASA API](https://developer.NASA.com/en/docs/NASA-api/data-dictionary/introduction).
 
 | Exception                                                                                                                  | Description                                                       |
 | -------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------- |
