@@ -3,7 +3,7 @@
 // modification, are permitted provided the conditions.
 
 // 🌎 Project imports:
-import 'package:nasa_api/src/core/config/retry_config.dart';
+import 'package:nasa/src/core/config/retry_config.dart';
 // 📦 Package imports:
 import 'package:test/test.dart';
 

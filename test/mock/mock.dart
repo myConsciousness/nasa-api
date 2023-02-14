@@ -4,7 +4,7 @@
 
 // 📦 Package imports:
 import 'package:mockito/annotations.dart';
-import 'package:nasa_api/src/core/client/client.dart';
+import 'package:nasa/src/core/client/client.dart';
 
 @GenerateMocks([Client])
 void main() {}

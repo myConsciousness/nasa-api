@@ -2,10 +2,10 @@
 // Redistribution and use in source and binary forms, with or without
 // modification, are permitted provided the conditions.
 
-import 'package:nasa_api/src/core/exception/unauthorized_exception.dart';
-import 'package:nasa_api/src/service/apod/apod_data.dart';
-import 'package:nasa_api/src/service/apod/apod_service.dart';
-import 'package:nasa_api/src/service/response/nasa_response.dart';
+import 'package:nasa/src/core/exception/unauthorized_exception.dart';
+import 'package:nasa/src/service/apod/apod_data.dart';
+import 'package:nasa/src/service/apod/apod_service.dart';
+import 'package:nasa/src/service/response/nasa_response.dart';
 import 'package:test/test.dart';
 
 import '../../../mock/client_stubs.dart';

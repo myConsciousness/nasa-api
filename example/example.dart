@@ -2,7 +2,7 @@
 // Redistribution and use in source and binary forms, with or without
 // modification, are permitted provided the conditions.
 
-import 'package:nasa_api/nasa_api.dart';
+import 'package:nasa/nasa.dart';
 
 Future<void> main() async {
   final nasa = NasaApi(

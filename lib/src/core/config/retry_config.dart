@@ -16,7 +16,7 @@ import '../client/retry_event.dart';
 /// the timing of retries.
 ///
 /// ```dart
-/// import 'package:nasa_api/nasa_api.dart';
+/// import 'package:nasa/nasa.dart';
 ///
 /// void main() async {
 ///   final nasa = NasaApi(

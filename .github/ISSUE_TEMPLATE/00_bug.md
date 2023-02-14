@@ -33,7 +33,7 @@ Output of: flutter doctor -v
 
 <!--
 Create a list of more environment information, like:
-* nasa_api version: 0.4.0
+* nasa version: 0.4.0
 -->
 
 # 6. Log information

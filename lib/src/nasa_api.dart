@@ -19,10 +19,10 @@ import 'service/nasa_service.dart';
 /// The following exceptions may be thrown by this object.
 ///
 /// - [TimeoutException](https://api.dart.dev/stable/2.17.6/dart-async/TimeoutException-class.html): If the request takes longer than the specified timeout.
-/// - [UnauthorizedException](https://pub.dev/documentation/nasa_api/latest/nasa_api/UnauthorizedException-class.html): When the access token is invalid.
-/// - [RateLimitExceededException](https://pub.dev/documentation/nasa_api/latest/nasa_api/RateLimitExceededException-class.html): When the rate limit is exceeded.
-/// - [DataNotFoundException](https://pub.dev/documentation/nasa_api/latest/nasa_api/DataNotFoundException-class.html): When response has no body or data field.
-/// - [NasaException](https://pub.dev/documentation/nasa_api/latest/nasa_api/NasaException-class.html): When the response body is not a valid JSON and etc.
+/// - [UnauthorizedException](https://pub.dev/documentation/nasa/latest/nasa/UnauthorizedException-class.html): When the access token is invalid.
+/// - [RateLimitExceededException](https://pub.dev/documentation/nasa/latest/nasa/RateLimitExceededException-class.html): When the rate limit is exceeded.
+/// - [DataNotFoundException](https://pub.dev/documentation/nasa/latest/nasa/DataNotFoundException-class.html): When response has no body or data field.
+/// - [NasaException](https://pub.dev/documentation/nasa/latest/nasa/NasaException-class.html): When the response body is not a valid JSON and etc.
 ///
 /// ## More Information
 ///

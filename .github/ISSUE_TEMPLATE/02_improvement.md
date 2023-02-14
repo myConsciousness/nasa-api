@@ -1,6 +1,6 @@
 ---
 name: Improvement suggestion.
-about: Something in nasa_api can be improved.
+about: Something in nasa can be improved.
 title: ""
 labels: "enhancement"
 assignees: "myConsciousness"

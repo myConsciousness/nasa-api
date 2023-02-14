@@ -78,7 +78,7 @@ foo(f1,
 ### 1.1.3. Imports
 
 - Never include unused or duplicated imports.
-- You must always use relative imports for imports within the `nasa_api` (internal imports must
+- You must always use relative imports for imports within the `nasa` (internal imports must
   be relative).
 - Omit `./` for relative imports from the same directory.
 - Avoid importing groups of APIs internally.
@@ -170,7 +170,7 @@ Basically we follow naming style in [Effective Dart](https://dart.dev/guides/lan
 
 The only thing to note is the **method name**. The method name should be a name that describes the operation of each endpoint. It's also better to give a standard prefix so that users can quickly find the method they want to use.
 
-So `nasa_api` uses the following standard prefixes depending on endpoint characteristics.
+So `nasa` uses the following standard prefixes depending on endpoint characteristics.
 
 | Prefix      | Description                                                                                        |
 | ----------- | -------------------------------------------------------------------------------------------------- |

@@ -1,6 +1,6 @@
 ---
 name: Feature request.
-about: Suggest a new feature for nasa_api.
+about: Suggest a new feature for nasa.
 title: ""
 labels: ""
 assignees: "myConsciousness"

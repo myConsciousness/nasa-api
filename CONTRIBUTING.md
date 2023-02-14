@@ -88,7 +88,7 @@ and it will be automatically reflected in the PR.
 
 ### 1.3.2. Open a pull request
 
-Go to the [pull request page of nasa_api][prs] and in the top
+Go to the [pull request page of nasa][prs] and in the top
 of the page it will ask you if you want to open a pull request from your newly created branch.
 
 The title of the pull request should start with a [conventional commit] type.

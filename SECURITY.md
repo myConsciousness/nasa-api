@@ -9,13 +9,13 @@
 
 <!-- /TOC -->
 
-This document outlines security procedures and general policies for the `nasa_api`
+This document outlines security procedures and general policies for the `nasa`
 project created by `Kato Shinya`.
 
 ## 1.1. Reporting a Bug
 
-The team and community take all security bugs in `nasa_api` seriously.
-Thank you for improving the security of `nasa_api`. We appreciate your efforts and
+The team and community take all security bugs in `nasa` seriously.
+Thank you for improving the security of `nasa`. We appreciate your efforts and
 responsible disclosure and will make every effort to acknowledge your
 contributions.
 

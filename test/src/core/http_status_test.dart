@@ -3,7 +3,7 @@
 // modification, are permitted provided the conditions.
 
 // 📦 Package imports:
-import 'package:nasa_api/src/core/http_status.dart';
+import 'package:nasa/src/core/http_status.dart';
 import 'package:test/test.dart';
 
 void main() {
