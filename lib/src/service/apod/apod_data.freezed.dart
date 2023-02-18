@@ -26,7 +26,7 @@ mixin _$APODData {
   String get url => throw _privateConstructorUsedError;
   @JsonKey(name: 'hdurl')
   String get hdUrl => throw _privateConstructorUsedError;
-  String get copyright => throw _privateConstructorUsedError;
+  String? get copyright => throw _privateConstructorUsedError;
   String get mediaType => throw _privateConstructorUsedError;
   String get serviceVersion => throw _privateConstructorUsedError;
   @JsonKey(name: 'date')
@@ -48,7 +48,7 @@ abstract class $APODDataCopyWith<$Res> {
       @JsonKey(name: 'explanation') String description,
       String url,
       @JsonKey(name: 'hdurl') String hdUrl,
-      String copyright,
+      String? copyright,
       String mediaType,
       String serviceVersion,
       @JsonKey(name: 'date') DateTime createdAt});
@@ -71,7 +71,7 @@ class _$APODDataCopyWithImpl<$Res, $Val extends APODData>
     Object? description = null,
     Object? url = null,
     Object? hdUrl = null,
-    Object? copyright = null,
+    Object? copyright = freezed,
     Object? mediaType = null,
     Object? serviceVersion = null,
     Object? createdAt = null,
@@ -93,10 +93,10 @@ class _$APODDataCopyWithImpl<$Res, $Val extends APODData>
           ? _value.hdUrl
           : hdUrl // ignore: cast_nullable_to_non_nullable
               as String,
-      copyright: null == copyright
+      copyright: freezed == copyright
           ? _value.copyright
           : copyright // ignore: cast_nullable_to_non_nullable
-              as String,
+              as String?,
       mediaType: null == mediaType
           ? _value.mediaType
           : mediaType // ignore: cast_nullable_to_non_nullable
@@ -125,7 +125,7 @@ abstract class _$$_APODDataCopyWith<$Res> implements $APODDataCopyWith<$Res> {
       @JsonKey(name: 'explanation') String description,
       String url,
       @JsonKey(name: 'hdurl') String hdUrl,
-      String copyright,
+      String? copyright,
       String mediaType,
       String serviceVersion,
       @JsonKey(name: 'date') DateTime createdAt});
@@ -146,7 +146,7 @@ class __$$_APODDataCopyWithImpl<$Res>
     Object? description = null,
     Object? url = null,
     Object? hdUrl = null,
-    Object? copyright = null,
+    Object? copyright = freezed,
     Object? mediaType = null,
     Object? serviceVersion = null,
     Object? createdAt = null,
@@ -168,10 +168,10 @@ class __$$_APODDataCopyWithImpl<$Res>
           ? _value.hdUrl
           : hdUrl // ignore: cast_nullable_to_non_nullable
               as String,
-      copyright: null == copyright
+      copyright: freezed == copyright
           ? _value.copyright
           : copyright // ignore: cast_nullable_to_non_nullable
-              as String,
+              as String?,
       mediaType: null == mediaType
           ? _value.mediaType
           : mediaType // ignore: cast_nullable_to_non_nullable
@@ -196,7 +196,7 @@ class _$_APODData implements _APODData {
       @JsonKey(name: 'explanation') required this.description,
       required this.url,
       @JsonKey(name: 'hdurl') required this.hdUrl,
-      required this.copyright,
+      this.copyright,
       required this.mediaType,
       required this.serviceVersion,
       @JsonKey(name: 'date') required this.createdAt});
@@ -215,7 +215,7 @@ class _$_APODData implements _APODData {
   @JsonKey(name: 'hdurl')
   final String hdUrl;
   @override
-  final String copyright;
+  final String? copyright;
   @override
   final String mediaType;
   @override
@@ -274,7 +274,7 @@ abstract class _APODData implements APODData {
       @JsonKey(name: 'explanation') required final String description,
       required final String url,
       @JsonKey(name: 'hdurl') required final String hdUrl,
-      required final String copyright,
+      final String? copyright,
       required final String mediaType,
       required final String serviceVersion,
       @JsonKey(name: 'date') required final DateTime createdAt}) = _$_APODData;
@@ -292,7 +292,7 @@ abstract class _APODData implements APODData {
   @JsonKey(name: 'hdurl')
   String get hdUrl;
   @override
-  String get copyright;
+  String? get copyright;
   @override
   String get mediaType;
   @override

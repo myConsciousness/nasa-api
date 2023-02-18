@@ -1,6 +1,6 @@
 name: nasa
 description: The easiest and powerful Dart/Flutter library for NASA APIs.
-version: 0.0.1
+version: 0.0.2
 repository: https://github.com/myConsciousness/nasa-api
 issue_tracker: https://github.com/myConsciousness/nasa-api/issues
 
