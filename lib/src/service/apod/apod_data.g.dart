@@ -17,7 +17,7 @@ _$_APODData _$$_APODDataFromJson(Map json) => $checkedCreate(
           description: $checkedConvert('explanation', (v) => v as String),
           url: $checkedConvert('url', (v) => v as String),
           hdUrl: $checkedConvert('hdurl', (v) => v as String),
-          copyright: $checkedConvert('copyright', (v) => v as String),
+          copyright: $checkedConvert('copyright', (v) => v as String?),
           mediaType: $checkedConvert('media_type', (v) => v as String),
           serviceVersion:
               $checkedConvert('service_version', (v) => v as String),

@@ -1,5 +1,9 @@
 # Release Note
 
+## v0.0.2
+
+- `copyright` in `APODData` is nullable. ([#2](https://github.com/myConsciousness/nasa-api/issues/2))
+
 ## v0.0.1
 
 - First Release!
