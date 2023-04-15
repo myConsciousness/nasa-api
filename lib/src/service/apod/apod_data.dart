@@ -16,7 +16,7 @@ class APODData with _$APODData {
     required String title,
     @JsonKey(name: 'explanation') required String description,
     required String url,
-    @JsonKey(name: 'hdurl') required String hdUrl,
+    @JsonKey(name: 'hdurl') String? hdUrl,
     String? copyright,
     required String mediaType,
     required String serviceVersion,

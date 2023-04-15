@@ -25,7 +25,7 @@ mixin _$APODData {
   String get description => throw _privateConstructorUsedError;
   String get url => throw _privateConstructorUsedError;
   @JsonKey(name: 'hdurl')
-  String get hdUrl => throw _privateConstructorUsedError;
+  String? get hdUrl => throw _privateConstructorUsedError;
   String? get copyright => throw _privateConstructorUsedError;
   String get mediaType => throw _privateConstructorUsedError;
   String get serviceVersion => throw _privateConstructorUsedError;
@@ -47,7 +47,7 @@ abstract class $APODDataCopyWith<$Res> {
       {String title,
       @JsonKey(name: 'explanation') String description,
       String url,
-      @JsonKey(name: 'hdurl') String hdUrl,
+      @JsonKey(name: 'hdurl') String? hdUrl,
       String? copyright,
       String mediaType,
       String serviceVersion,
@@ -70,7 +70,7 @@ class _$APODDataCopyWithImpl<$Res, $Val extends APODData>
     Object? title = null,
     Object? description = null,
     Object? url = null,
-    Object? hdUrl = null,
+    Object? hdUrl = freezed,
     Object? copyright = freezed,
     Object? mediaType = null,
     Object? serviceVersion = null,
@@ -89,10 +89,10 @@ class _$APODDataCopyWithImpl<$Res, $Val extends APODData>
           ? _value.url
           : url // ignore: cast_nullable_to_non_nullable
               as String,
-      hdUrl: null == hdUrl
+      hdUrl: freezed == hdUrl
           ? _value.hdUrl
           : hdUrl // ignore: cast_nullable_to_non_nullable
-              as String,
+              as String?,
       copyright: freezed == copyright
           ? _value.copyright
           : copyright // ignore: cast_nullable_to_non_nullable
@@ -124,7 +124,7 @@ abstract class _$$_APODDataCopyWith<$Res> implements $APODDataCopyWith<$Res> {
       {String title,
       @JsonKey(name: 'explanation') String description,
       String url,
-      @JsonKey(name: 'hdurl') String hdUrl,
+      @JsonKey(name: 'hdurl') String? hdUrl,
       String? copyright,
       String mediaType,
       String serviceVersion,
@@ -145,7 +145,7 @@ class __$$_APODDataCopyWithImpl<$Res>
     Object? title = null,
     Object? description = null,
     Object? url = null,
-    Object? hdUrl = null,
+    Object? hdUrl = freezed,
     Object? copyright = freezed,
     Object? mediaType = null,
     Object? serviceVersion = null,
@@ -164,10 +164,10 @@ class __$$_APODDataCopyWithImpl<$Res>
           ? _value.url
           : url // ignore: cast_nullable_to_non_nullable
               as String,
-      hdUrl: null == hdUrl
+      hdUrl: freezed == hdUrl
           ? _value.hdUrl
           : hdUrl // ignore: cast_nullable_to_non_nullable
-              as String,
+              as String?,
       copyright: freezed == copyright
           ? _value.copyright
           : copyright // ignore: cast_nullable_to_non_nullable
@@ -195,7 +195,7 @@ class _$_APODData implements _APODData {
       {required this.title,
       @JsonKey(name: 'explanation') required this.description,
       required this.url,
-      @JsonKey(name: 'hdurl') required this.hdUrl,
+      @JsonKey(name: 'hdurl') this.hdUrl,
       this.copyright,
       required this.mediaType,
       required this.serviceVersion,
@@ -213,7 +213,7 @@ class _$_APODData implements _APODData {
   final String url;
   @override
   @JsonKey(name: 'hdurl')
-  final String hdUrl;
+  final String? hdUrl;
   @override
   final String? copyright;
   @override
@@ -273,7 +273,7 @@ abstract class _APODData implements APODData {
       {required final String title,
       @JsonKey(name: 'explanation') required final String description,
       required final String url,
-      @JsonKey(name: 'hdurl') required final String hdUrl,
+      @JsonKey(name: 'hdurl') final String? hdUrl,
       final String? copyright,
       required final String mediaType,
       required final String serviceVersion,
@@ -290,7 +290,7 @@ abstract class _APODData implements APODData {
   String get url;
   @override
   @JsonKey(name: 'hdurl')
-  String get hdUrl;
+  String? get hdUrl;
   @override
   String? get copyright;
   @override
