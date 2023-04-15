@@ -1,5 +1,9 @@
 # Release Note
 
+## v0.0.3
+
+- `hdurl` in `APODData` is nullable.
+
 ## v0.0.2
 
 - `copyright` in `APODData` is nullable. ([#2](https://github.com/myConsciousness/nasa-api/issues/2))
