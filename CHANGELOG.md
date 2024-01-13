@@ -1,5 +1,9 @@
 # Release Note
 
+## v0.0.4
+
+- Added `date` parameter on `.lookupImage`.
+
 ## v0.0.3
 
 - `hdurl` in `APODData` is nullable.

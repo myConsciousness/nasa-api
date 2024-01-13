@@ -3,6 +3,8 @@
 // modification, are permitted provided the conditions.
 
 // 🌎 Project imports:
+import 'package:intl/intl.dart';
+
 import '../../core/client/client.dart';
 import '../base_service.dart';
 import '../response/nasa_response.dart';
@@ -20,7 +22,9 @@ abstract class APODService {
         client: client,
       );
 
-  Future<NasaResponse<APODData>> lookupImage();
+  Future<NasaResponse<APODData>> lookupImage({
+    DateTime? date,
+  });
 }
 
 class _APODService extends BaseService implements APODService {
@@ -32,12 +36,15 @@ class _APODService extends BaseService implements APODService {
   });
 
   @override
-  Future<NasaResponse<APODData>> lookupImage() async =>
+  Future<NasaResponse<APODData>> lookupImage({
+    DateTime? date,
+  }) async =>
       super.transformSingleDataResponse(
         await super.get(
           '/planetary/apod',
           queryParameters: {
             'api_key': token,
+            if (date != null) 'date': DateFormat('yyyy-MM-dd').format(date),
           },
         ),
         dataBuilder: APODData.fromJson,
